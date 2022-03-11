@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./nav-style.css">
+    <link rel="stylesheet" href="./main-style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- Nav Bar-->
+    <nav>
+        <p class="nav--text">Log in to get started</p>
+
+        <img src="./logo.png" alt="Logo" class="logo">
+
+        <div class="login--info">
+            <input type="text" class="userName input" placeholder="user">
+            <input type="password" class="password input" placeholder="PIN">
+
+            <form class="login--btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="login--btn--icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+    <main class="app">
+        <div class="balance">
+            <div>
+                <p class="balance--label">Current balance</p>
+                <p class="balance--date">As of 
+                    <span class="current--date">05/03/2037</span>
+                </p>
+            </div>
+            <p class="current--balance">0000€</p>
+        </div>
+
+        <div class="activity">
+            <div class="act--row">
+                <div class="act--type act--type--deposit">
+                    <p>2 DEPOSIT</p>
+                </div>
+                <div class="act--date">
+                    <p>3 DAYS AGO</p>
+                </div>
+                <div class="act--balance">
+                    <p>4 000€</p>
+                </div>
+            </div>
+            <div class="act--row">
+                <div class="act--type act--type--withdrawal">
+                    <p>1 WITHDRAWAL</p>
+                </div>
+                <div class="act--date">
+                    <p>24/01/2037</p>
+                </div>
+                <div class="act--balance">
+                    <p>-378€</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="act transfer">
+            <p>Tranfer money</p>
+            <form action="submit" class="transfet--form">
+                <input type="text" name="" id="receiver">
+                <input type="number" name="" id="">
+                <label for="Transer to"></label>
+            </form>
+        </div>
+
+        <div class="act request">
+
+        </div>
+
+        <div class="act close">
+
+        </div>
+
+        <div class="info">dzdedzdezed</div>
+    </main>
+</body>
+</html>

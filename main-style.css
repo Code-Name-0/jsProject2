@@ -1,0 +1,95 @@
+.app {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+  margin: 10rem auto;
+  max-width: 100rem;
+  border-radius: 1rem;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  grid-column: 1 / span 2;
+}
+
+.balance--label {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.balance--date {
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.current--balance {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+/*activity styel*/
+
+.activity {
+  background-color: white;
+  grid-row: 2 / span 3;
+  border-radius: inherit;
+  overflow: scroll;
+}
+
+.act--row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 4rem;
+  border-bottom: solid 1px #eee;
+}
+
+.act--type {
+  margin-right: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+}
+
+.act--date {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.act--balance {
+  font-size: 1.7rem;
+  margin-left: auto;
+}
+
+.act--type--deposit {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.act--type--withdrawal {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.act {
+  border-radius: inherit;
+}
+
+.transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.request {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.info {
+  grid-column: 1 / span 2;
+}
